@@ -7,7 +7,7 @@ Object.myEntries = function (obj) {
         for (let key in obj) {
             // console.log(key);
             if (Object.prototype.hasOwnProperty.call(obj, key)) {
-                result.push([key, obj[key]]);
+                result.push([key, obj[key]]);d
             }
         }
         return result;
