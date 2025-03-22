@@ -1,24 +1,24 @@
 Object.myEntries = function (obj) {
-        if (obj == null || typeof obj !== "object") {
-            throw new TypeError("Object.entries called on non-object");
-        }
+    if (obj == null || typeof obj !== "object") {
+        throw new TypeError("Object.entries called on non-object");
+    }
 
-        let result = [];
-        for (let key in obj) {
-            // console.log(key);
-            if (Object.prototype.hasOwnProperty.call(obj, key)) {
-                result.push([key, obj[key]]);d
-            }
+    let result = [];
+    for (let key in obj) {
+        // console.log(key);
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            result.push([key, obj[key]]); d
         }
-        return result;
-    };
+    }
+    return result;
+};
 
 
 const car1 = {
-    brand : "Benz",
-    color : 'purple',
-    speed : 60,
-    model : "top"
+    brand: "Benz",
+    color: 'purple',
+    speed: 60,
+    model: "top"
 }
 
 
